@@ -1,0 +1,68 @@
+@font-face{
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto-Regular.ttf');
+
+}
+
+@font-face{
+    font-family: 'Roboto-Light-Italic';
+    src: url('./assets/fonts/Roboto-LightItalic.ttf');
+}
+
+:root{
+    /* Typography */
+        --font-family: 'Roboto', sans-serif;
+
+        /*Hero Section */
+
+            --hero-main-text-font-size: 48px;
+            --hero-main-text-font-weight:bolder;
+
+            --hero-secondary-text:18px;
+
+        /*Header Section */
+
+            --header-link-font-size:18px;
+            --header-logo-font-size:24px;
+
+
+        /* Info Section */
+            --info-section-header-font-size:36px;
+            --info-section-header-font-weight:bolder;
+
+        /*Quote Section */
+            --quote-section-font-size:18px;
+            --quote-section-font-style: 'Roboto-Light-Italic';
+
+
+    /* Background Colors */
+        --dark-bg-color: #1F2937;
+        --quote-section-bg-color:#E5E7EB;
+
+    /*Hero Section */
+
+        --hero-main-text-color:#F9FAF8;
+        --hero-secondary-text-color:#E5E7EB;
+
+    /*Header Section */
+
+        --header-link-text-color:#E5E7EB;
+        --header-logo-text-color:#F9FAF8;   
+
+    /* Info Section */
+        --info-section-header-text-color:#1F2937;
+
+    /*Quote Section */
+        --quote-section-text-color:#1F2937;
+    
+    
+
+
+
+    /* Button */
+        --button-color:#3882F6;
+
+
+
+    
+}
