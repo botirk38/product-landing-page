@@ -1,1 +1,1 @@
-# [Product/Service3 Name] Landing Page
+# [Product/Service Name] Landing Page
