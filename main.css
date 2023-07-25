@@ -96,12 +96,12 @@
   
   .container {
     width: 100%;
-    max-width: 900px;
+    max-width: 1200px;
   }
   
   .container-wide {
     width: 100%;
-    max-width: 1300px;
+    max-width: 900px;
   }
   
   .navbar {
@@ -193,7 +193,6 @@
     height: auto;
     margin-left: 2rem;
     margin-top: 2.5rem;
-    background-color: var(--dark-bg-color);
   
   }
   
