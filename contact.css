@@ -70,7 +70,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: var(--font-family);
   text-align: center;
   margin: 0;
 }
@@ -78,8 +78,6 @@ body {
   background-color: var(--dark-bg-color);
   color: #fff;
   padding: 10px 0;
-}
-.navbar {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -167,6 +165,11 @@ input {
   padding: 1em;
   border-radius: 10px;
   outline: none ;
+}
+textarea {
+  margin-top: 1em;
+  border-radius: 10px;
+  outline: none;
 }
 .contact-text {
   font-size: var(--hero-secondary-text);
