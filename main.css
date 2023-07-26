@@ -186,6 +186,7 @@
             justify-content: center;
             align-items:center;
             background-color: var(--dark-bg-color);
+            margin-bottom:2rem;
         }
 
         .hero-content{
@@ -366,14 +367,16 @@
             font-weight: var(--info-section-header-font-weight);
             padding: 1rem;
             width:60%;
+            margin-bottom:-0.5rem;
         }
 
         .cta-text p{
             font-size: 16px;
             font-weight:300;
             color: var(--hero-secondary-text-color);
-            padding: 0.5rem;
             width:59%;
+            margin-top:0;
+            margin-left:1rem;
 
         }
     
@@ -386,11 +389,11 @@
         }
         .cta-btn button{
             background-color: var(--button-color);
-            border-radius: 10px;
+            border-radius: 5px;
             font-weight: 700;
             border: 2px solid white;
             color: var(--hero-main-text-color);
-            width:30%;
+            width:35%;
             height:auto;
 
         }
