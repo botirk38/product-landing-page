@@ -107,16 +107,83 @@ header nav ul li a.nav-selected {
 }
 
 .sustainability-chart {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     padding: 4vw 0;
+}
+
+.sustainability-chart .carousel {
+    position: relative;
+    padding: 0 4vw;
+}
+
+.sustainability-chart .carousel input {
+    display: none;
+}
+
+.sustainability-chart .carousel label {
+    cursor: pointer;
+    position: absolute;
+    left: 0vw;
+    top: 13vw;
+}
+
+.sustainability-chart .carousel label:hover svg {
+    fill: var(--button-color);
+}
+
+.sustainability-chart .carousel label svg {
+    fill: var(--dark-bg-color);
+    width: 2vw;
+    height: 2vw;
+}
+
+.sustainability-chart .carousel .carousel-items {
+    position: relative;
+    min-height: 32vw;
+    min-width: 27.7vw;
+}
+
+.sustainability-chart .carousel figure {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    min-height: 32vw;
+    min-width: 27.7vw;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.sustainability-chart .carousel #chart-1:checked ~ label[for="chart-1"], .sustainability-chart .carousel #chart-2:checked ~ label[for="chart-2"], .sustainability-chart .carousel #chart-3:checked ~ label[for="chart-3"] {
+    display: none;
+}
+
+.sustainability-chart .carousel #chart-1:checked ~ label[for="chart-2"] {
+    left: 90%;
+    rotate: 180deg;
+}
+
+.sustainability-chart .carousel #chart-2:checked ~ label[for="chart-3"] {
+    left: 90%;
+    rotate: 180deg;
+}
+
+.sustainability-chart .carousel #chart-3:checked ~ label[for="chart-1"] {
+    left: 90%;
+    rotate: 180deg;
+}
+
+.sustainability-chart .carousel #chart-1:checked ~ .carousel-items #figure-1, .sustainability-chart .carousel #chart-2:checked ~ .carousel-items #figure-2, .sustainability-chart .carousel #chart-3:checked ~ .carousel-items #figure-3 {
+    opacity: 1;
 }
 
 .sustainability-chart figure img {
     max-width: 30vw;
 }
 
-.sustainability-chart div {
+.sustainability-chart .comitted {
     display: flex;
     flex-direction: column;
     justify-content: center;

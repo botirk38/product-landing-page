@@ -48,11 +48,29 @@
                 </p>
             </section>
             <section class="sustainability-chart container">
-                <figure>
-                    <img src="assets/images/chart.jpg" alt="bar chart showing co2 emissions for BD Headphones">
-                    <figcaption>co2 emissions by year (per bmt)</figcaption>
-                </figure>
-                <div>
+                <div class="carousel">
+                    <input type="radio" name="carousel" id="chart-1" checked>
+                    <input type="radio" name="carousel" id="chart-2">
+                    <input type="radio" name="carousel" id="chart-3">
+                    <label for="chart-1"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></label>
+                    <label for="chart-2"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></label>
+                    <label for="chart-3"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg></label>
+                    <div class="carousel-items">
+                        <figure id="figure-1">
+                            <img src="assets/images/chart.jpg" alt="bar chart showing co2 emissions for BD Headphones yearly">
+                            <figcaption>co2 emissions by year (per bmt)</figcaption>
+                        </figure>
+                        <figure id="figure-2">
+                            <img src="assets/images/chart-2.jpg" alt="bar chart showing co2 emissions for BD Headphones monthly">
+                            <figcaption>co2 emissions by month (per bmt)</figcaption>
+                        </figure>
+                        <figure id="figure-3">
+                            <img src="assets/images/chart-3.jpg" alt="bar chart showing co2 emissions for BD Headphones weekly during july">
+                            <figcaption>co2 emissions this month by week (per bmt)</figcaption>
+                        </figure>
+                    </div>
+                </div>
+                <div class="comitted">
                     <h2>We stay comitted</h2>
                     <p>
                         Ever since our inception our main mission has been money making, but our second main mission is the 
