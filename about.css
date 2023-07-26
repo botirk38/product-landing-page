@@ -42,6 +42,7 @@
   }
   
   .hero h1 {
+    font-family: 'Roboto Slab', serif;
     font-size: 2.5rem;
     margin-bottom: 1rem;
   }
