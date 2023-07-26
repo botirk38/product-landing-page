@@ -96,6 +96,7 @@ header nav ul li a.nav-selected {
 }
 
 .sustainability p {
+    font-size: var(--header-link-font-size);
     padding: 1vw 2vw;
 }
 
@@ -130,18 +131,16 @@ header nav ul li a.nav-selected {
     width: 100%;
 }
 
-.sustainability-newsletter p {
-    font-size: var(--header-link-font-size);
-}
-
 .sustainability-newsletter form input {
     background: transparent;
     border: 1px solid var(--hero-main-text-color);
     border-radius: 5px;
     box-sizing: border-box;
     color: var(--hero-main-text-color);
+    font-size: 0.9em;
     height: 2.5vw;
     line-height: 1;
+    margin-right: 1vw;
     text-align: center;
     width: 20vw;
 }
@@ -154,11 +153,17 @@ header nav ul li a.nav-selected {
     outline: none;
 }
 
+.sustainability-newsletter form input:active::placeholder, .sustainability-newsletter form input:focus::placeholder {
+    opacity: 0.3;
+}
+
 .sustainability-newsletter form button {
     background: transparent;
     border: 1px solid var(--header-logo-text-color);
     border-radius: 5px;
     cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
     height: 2.5vw;
     line-height: 1;
     padding: 0 2vw;
