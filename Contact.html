@@ -7,25 +7,39 @@
   <title>Contact Us</title>
 </head>
 <body>
+  <header class="navbar">
+    <nav class="navbar-links">    
+      <div class="navbar-logo">
+        <img src="./assets/images/logo.png" alt="brand-logo" loading="lazy">
+      </div>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Pricing</a></li>
+        <li><a href="#">Mission</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
   <section class="contact">
     <div class="contact-form-img">
       <img src="./assets/images/bd.png" alt="Image of the BD headphones">
     </div>
     <h1 class="contact-title">Contact Us</h1>
     <p class="contact-text">
-      Hey, you need to get in touch with us at BD, send us your inquiry, and <strong>we'll be delighted to assist you</strong> and respond as soon as possible
+      Hey, you need to get in touch with us at BD. Whether you have questions, feedback, or just want to say hello, don't hesitate to send us your inquiry! We're here to assist you and will be delighted to respond as soon as possible. Your messages are important to us, and we value every interaction with our customers. So, feel free to reach out anytime; <span>we're eager to hear from you</span>
     </p>
     <form class="contact-form" action="#" method="post">
-      <div class="form-content">
         <label for="name">Name</label>
         <input type="text" id="name" placeholder="Enter your name" required>
         <label for="email">Email</label>
         <input type="email" id="email" placeholder="Enter your email" required>
-        <label for="checkbox">Agreed with our <strong>terms and conditions.</strong></label>
-        <input type="checkbox" id="checkbox" required>
-        <button type="submit">Send away!</button>
-      </div>
-    </form>
+        <button class="form-btn" type="submit">Send away!</button>
+      </form>
+      <p>We'll never share your information without your permission</p>
   </section>
+  <footer class="footer container-wide">
+    <p>Copyright ©</p>
+  </footer>
 </body>
 </html>
