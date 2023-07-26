@@ -110,6 +110,10 @@ header nav ul li a.nav-selected {
     justify-content: space-between;
 }
 
+.sustainability-chart figure img {
+    max-width: 30vw;
+}
+
 .sustainability-chart div {
     display: flex;
     flex-direction: column;
