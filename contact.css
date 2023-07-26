@@ -127,10 +127,6 @@ body {
 h1,p {
   margin: 0;
 }
-span {
-  color: var(--button-color);
-  font-weight: bold;
-}
 .contact-text {
   font-size: 1.75rem;
   max-width: 75em;
@@ -160,15 +156,17 @@ span {
 label, input, textarea {
   margin: .5em 0;
 }
-input {
+input{
   width: 100%;
   padding: 1em;
   border-radius: 10px;
-  outline: none ;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
 }
 textarea {
   border-radius: 10px;
   outline: none;
+  font-family: var(--font-family);
 }
 .contact-text {
   font-size: var(--hero-secondary-text);
@@ -186,6 +184,7 @@ textarea {
   letter-spacing: .25em;
   border: none;
   transition: 300ms ease-in;
+  font-family: var(--font-family);
 }
 .form-btn:hover {
   transform: scale(1.1,1.1);  
