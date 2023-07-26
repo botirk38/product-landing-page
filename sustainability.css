@@ -37,7 +37,7 @@ header nav ul {
 
 header nav ul li a {
     border: 1px solid transparent;
-    border-radius: 0.5vw;
+    border-radius: 5px;
     color: var(--header-link-text-color);
     font-size: var(--header-link-font-size);
     padding: 0.3vw;
@@ -60,6 +60,7 @@ header nav ul li a.nav-selected {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-bottom: 2vw;
 }
 
 .sustainability > img {
@@ -75,10 +76,10 @@ header nav ul li a.nav-selected {
 }
 
 .sustainability .sustainability-category {
-    width: 50%;
-    padding: 2vw;
-    box-sizing: border-box;
     background-color: var(--quote-section-bg-color);
+    box-sizing: border-box;
+    padding: 2vw;
+    width: 50%;
 }
 
 .sustainability .sustainability-category:first-of-type {
@@ -100,14 +101,14 @@ header nav ul li a.nav-selected {
 
 .sustainability svg {
     fill: var(--button-color);
-    width: 4vw;
     height: 4vw;
+    width: 4vw;
 }
 
 .sustainability-chart {
     display: flex;
-    padding: 4vw 0;
     justify-content: space-between;
+    padding: 4vw 0;
 }
 
 .sustainability-chart figure img {
@@ -119,6 +120,53 @@ header nav ul li a.nav-selected {
     flex-direction: column;
     justify-content: center;
     width: 49%;
+}
+
+.sustainability-newsletter {
+    background-color: var(--dark-bg-color);
+    border-radius: 5px;
+    color: var(--hero-main-text-color);
+    padding: 2vw 0;
+    width: 100%;
+}
+
+.sustainability-newsletter p {
+    font-size: var(--header-link-font-size);
+}
+
+.sustainability-newsletter form input {
+    background: transparent;
+    border: 1px solid var(--hero-main-text-color);
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: var(--hero-main-text-color);
+    height: 2.5vw;
+    line-height: 1;
+    text-align: center;
+    width: 20vw;
+}
+
+.sustainability-newsletter input::placeholder, .sustainability-newsletter form button {
+    color: var(--hero-main-text-color);
+}
+
+.sustainability-newsletter form input:active, .sustainability-newsletter form input:focus {
+    outline: none;
+}
+
+.sustainability-newsletter form button {
+    background: transparent;
+    border: 1px solid var(--header-logo-text-color);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 2.5vw;
+    line-height: 1;
+    padding: 0 2vw;
+}
+
+.sustainability-newsletter form button:hover {
+    background: var(--header-logo-text-color);
+    color: var(--dark-bg-color);
 }
 
 footer {
