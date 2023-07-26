@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+}
+
+.container {
+    max-width: 1100px;
+}
+
+header {
+    background-color: var(--dark-bg-color);
+    padding: 1vw 0;
+}
+
+header > div.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+header .logo a {
+    color: var(--header-logo-text-color);
+    font-size: var(--header-logo-font-size);
+    font-weight: var(--hero-main-text-font-weight);
+    text-decoration: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header nav ul li a {
+    border: 1px solid transparent;
+    border-radius: 0.5vw;
+    color: var(--header-link-text-color);
+    font-size: var(--header-link-font-size);
+    padding: 0.3vw;
+    margin: 0.5vw;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    border-color: var(--button-color);
+}
+
+header nav ul li a.nav-selected {
+    color: var(--button-color);
+    border-color: transparent;
+}
+
+.sustainability {
+    color: var(--info-section-header-text-color);
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.sustainability > img {
+    max-width: 100%;
+}
+
+.sustainability h1 {
+    font-size: var(--info-section-header-font-size);
+    font-weight: var(--info-section-header-font-weight);
+    padding: 3vw 0;
+    position: relative;
+    width: 100%;
+}
+
+.sustainability .sustainability-category {
+    width: 50%;
+    padding: 2vw;
+    box-sizing: border-box;
+    background-color: var(--quote-section-bg-color);
+}
+
+.sustainability .sustainability-category:first-of-type {
+    background-color: var(--quote-section-text-color);
+    color: var(--quote-section-bg-color);
+}
+
+.sustainability h2 {
+    padding: 1vw;
+}
+
+.sustainability h2 i {
+    font-weight: bolder;
+}
+
+.sustainability p {
+    padding: 1vw 2vw;
+}
+
+.sustainability svg {
+    fill: var(--button-color);
+    width: 4vw;
+    height: 4vw;
+}
+
+.sustainability-chart {
+    display: flex;
+    padding: 4vw 0;
+    justify-content: space-between;
+}
+
+.sustainability-chart div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 49%;
+}
+
+footer {
+    color: var(--hero-main-text-color);
+    background-color: var(--dark-bg-color);
+    padding: 1.5vw 0;
+    text-align: center;
+}
