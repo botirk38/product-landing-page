@@ -304,12 +304,17 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            margin:0 auto;
-            margin-top:5rem;
             background-color: var(--quote-section-bg-color);
             min-height:30rem;
             max-width:100%;
             margin-bottom:4rem;
+        }
+
+        .testimonial-content{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
         }
        
 
@@ -321,7 +326,6 @@
         }
 
         .testimonial-text{
-            margin:0 auto;
             margin-bottom: 2rem;
             width:60%;
         }
