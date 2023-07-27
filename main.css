@@ -11,7 +11,6 @@
     font-style: italic;
     src: url('./assets/fonts/Roboto-LightItalic.ttf') format('truetype');
   }
-
 :root{
     /* Typography */
         --font-family: 'Roboto', sans-serif;
@@ -93,6 +92,7 @@
     main {
         min-height: 100vh;
         display: flex;
+        width:100%;
         flex-direction: column;
         justify-content:center;
         align-items: center;
@@ -110,8 +110,12 @@
     
     .container {
         width: 100%;
-        padding-left: 10rem;
-        padding-right: 10rem;
+        max-width: 75rem
+    }
+    
+    .container-wide {
+        width: 100%;
+        max-width: 100dvw;
     }
     
     
@@ -183,6 +187,7 @@
             align-items:center;
             background-image: url(./assets/images/main.jpg);
             background-position: top center;
+            background-repeat: no-repeat;
             margin-bottom:2rem;
         }
 
@@ -271,61 +276,84 @@
         .values-text{
             display: flex;
             flex-direction: column;
-            padding-right: 5rem;
+            padding-right: 1rem;
             justify-content: center;
             align-items: flex-start;
-            width:40%;
+            width:30%;
+        }
+        .values-text a {
+            text-decoration: none;
         }
         
         .values-img img{
-            width: 70%;
-            height: 70%;
+            width: 80%;
+            height: 80%;
             object-fit: cover;
         }
 
-        .values-img{
-            width:50%;
-            
-         
-        }  
+          
 
     /* Innovation Section */
 
     .innovation-section{
         display:flex;
         flex-direction:row;
-        justify-content:center;
+        justify-content:left;
         align-items:center;
-        margin:0 auto;
-        margin-bottom:2rem;
         max-width:100%;
+        min-height:30rem;
+        margin-bottom:2rem;
+        margin-left:36%;
     }
 
     .innovation-img {
-        width:100%;
+        
         float: left;
     
     }
     .innovation-img img{
-        width: 100%;
-        height: 100%;
+        width: 80%;
+        height: 80%;
+        float: left;
         object-fit: cover;
     }  
+    .innovation-text{
+        width:30rem;
+    }
 
+    /* Ad Section */
 
+    .ad-section {
+        width:43%;
+        justify-content:center;
+        align-items: center;
+        min-height: 23rem;
+        background-image: url(./assets/images/ad.jpg);
+        background-position: center center;
+        margin-bottom: 2rem;
+        background-repeat: no-repeat;
+    }
+    .ad-text {
+        padding-top: 17rem;
+        padding-right: 1rem;
+        font-size: 2rem;
+        text-align: right;
+        color: #3882F6;
+    }
 /* Testimonial Section */
-        .testimonial{
+        .partners{
             display:flex;
             flex-direction:column;
             justify-content:center;
             align-items:center;
             background-color: var(--quote-section-bg-color);
-            min-height:30rem;
+            min-height:17rem;
             max-width:100%;
-            margin-bottom:4rem;
+            margin-bottom:2rem;
         }
 
-        .testimonial-content{
+        .partners-content{
+            padding-top: 2rem;
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -333,89 +361,18 @@
         }
        
 
-        .testimonial p{
-            font-size: var(--quote-section-font-size);
-            font-style: italic;
-            color: var(--quote-section-text-color);
-
-        }
-
-        .testimonial-text{
-            margin-bottom: 2rem;
-            width:60%;
-        }
-
-        .testimonial-author{  
-            margin-left:45rem;
-            margin-right:0;
-            font-weight: var(--hero-main-text-font-weight);
-        }
-/* CTA Section */
-
-        .cta{
+        .partners-img {
             display:flex;
             flex-direction:row;
             justify-content:flex-start;
             align-items:center;
-            margin:0 auto;
-            background-color:var(--button-color);
-            color: var(--hero-main-text-color);
-            max-width:80%;
-            min-height:100%;
-            border-radius:10px;
-
-
         }
-
-        .cta-text{
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
+        .partners-img img{
             width:60%;
-           
+            height: 50%;
         }
 
-        .cta-text h3{
-            font-size: 18px;
-            font-weight: var(--info-section-header-font-weight);
-            padding: 1rem;
-            width:60%;
-            margin-bottom:-0.5rem;
-        }
 
-        .cta-text p{
-            font-size: 16px;
-            font-weight:300;
-            color: var(--hero-secondary-text-color);
-            width:59%;
-            margin-top:0;
-            margin-left:1rem;
-
-        }
-    
-        .cta-btn{
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
-            width:50%;
-        }
-        .cta-btn button{
-            background-color: var(--button-color);
-            border-radius: 5px;
-            font-weight: 700;
-            border: 2px solid white;
-            color: var(--hero-main-text-color);
-            width:35%;
-            height:auto;
-
-        }
-
-        .cta-btn button:hover {
-            background-color: var(--hero-main-text-color);
-            color: var(--button-color);
-        }
 
         .footer{
             display:flex;
@@ -423,9 +380,8 @@
             justify-content:center;
             align-items:center;
             margin:0 auto;
-            margin-top:5rem;
             background-color:var(--dark-bg-color);
-            color: var(--hero-main-text-color);
+            color: #fff;
             max-width:100%;
             min-height:100%;
             padding: 2rem;
