@@ -392,9 +392,9 @@
             font-size: 16px;
             font-weight:300;
             color: var(--hero-secondary-text-color);
-            width:70%;
+            padding-left:8rem;
+            padding-right:8rem;
             padding-bottom:1rem;
-            padding-left:2rem;
             
 
         }
