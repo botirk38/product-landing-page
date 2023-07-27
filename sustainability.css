@@ -57,9 +57,6 @@ header nav ul li a.nav-selected {
 .sustainability {
     color: var(--info-section-header-text-color);
     text-align: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     margin-bottom: 2vw;
 }
 
@@ -73,6 +70,11 @@ header nav ul li a.nav-selected {
     padding: 3vw 0;
     position: relative;
     width: 100%;
+}
+
+.sustainability .sustainability-categories {
+    display: flex;
+    justify-content: space-between;
 }
 
 .sustainability .sustainability-category {
@@ -110,6 +112,7 @@ header nav ul li a.nav-selected {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     padding: 4vw 0;
 }
 
@@ -152,6 +155,7 @@ header nav ul li a.nav-selected {
     top: 0;
     min-height: 32vw;
     min-width: 27.7vw;
+    max-width: 100%;
     opacity: 0;
     transition: opacity 0.2s ease;
 }
@@ -194,6 +198,7 @@ header nav ul li a.nav-selected {
     background-color: var(--dark-bg-color);
     border-radius: 5px;
     color: var(--hero-main-text-color);
+    margin: 0 auto;
     padding: 2vw 0;
     width: 100%;
 }
