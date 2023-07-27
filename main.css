@@ -71,6 +71,13 @@
 
     *, *::before, *::after {
         box-sizing: border-box;
+        margin:0;
+        padding:0;
+    }
+
+
+    button{
+        font:inherit;
     }
     body {
         font-family: var(--font-family);
@@ -81,6 +88,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        overflow-x:hidden;
     }
     
     main {
@@ -96,15 +104,19 @@
         color: #fff;
         padding: 10px 0;
     }
+
+    span{
+        font-weight:700;
+    }
     
     .container {
         width: 100%;
-        max-width: 1200px;
+        max-width: 75rem
     }
     
     .container-wide {
         width: 100%;
-        max-width: 900px;
+        max-width: 100dvw;
     }
 
     /* Header Section */
@@ -118,9 +130,6 @@
             align-items: center;
             height:100%;
             width:100%;
-            margin-right:1rem;
-            margin-top:-1rem;
-            padding-bottom:1rem;
         }
         
         .navbar-links {
@@ -128,28 +137,30 @@
             flex-direction: row;
             justify-content: flex-start;
             align-items: flex-start;
-            width: 85%;
+            width: 100%;
         }
         
         .navbar-logo {
             display: flex;
             flex: 1;
             justify-content: flex-start;
-            align-items: center;
+            align-items: flex-start;
+
         }
         
         .navbar-logo img {
-            width:20%;
-            height:20%;
-            margin-left: -5rem;
-            margin-top:0;
+            width:25%;
+            height:25%;
+          
         }
         
         .navbar ul {
             display: flex;
             list-style: none;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            margin-top:1rem;
         }
         
         .navbar ul li {
@@ -162,20 +173,29 @@
             padding: 5px 10px;
         }
         
-        .navbar ul li a:hover {
-            background-color: #555;
+        .navbar ul li a:hover,nav a.nav-selected {
+            background-color: var(--button-color);  
             border-radius: 5px;
         }
 
     /* Hero Section */
     
         .hero {
-            margin-top: 2rem;
             display: flex;
             flex-direction: row;
-            justify-content: flex-start;
-            align-items: flex-start;
-            margin-bottom: 2rem;
+            justify-content: center;
+            align-items:center;
+            background-color: var(--dark-bg-color);
+            margin-bottom:2rem;
+        }
+
+        .hero-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items:center;
+            background-color: var(--dark-bg-color);
+            margin-bottom:5rem;
         }
         
         .hero-text {
@@ -183,26 +203,24 @@
             flex-direction: column;
             justify-content: center;
             align-items: flex-start;
-            margin-bottom: 5rem;
+            width:50%;
         }
         
         .hero-text h1 {
             font-size: var(--hero-main-text-font-size);
             font-weight: var(--hero-main-text-font-weight);
             color: var(--hero-main-text-color);
-            margin-bottom: 0;
+            margin-bottom:0.5rem;
         }
         
         .hero-text p {
             font-size: var(--hero-secondary-text);
             color: var(--hero-secondary-text-color);
+            margin-bottom:0.5rem;
         }
         
         .hero-img {
-            width:1100px;
-            height: auto;
-            margin-left: 2rem;
-            margin-top: 2.5rem;
+            width:50%;
         
         }
         
@@ -227,21 +245,36 @@
             font-weight: 700;
         }
 
+        .hero-btn:hover{
+            background-color: var(--hero-main-text-color);
+            color: var(--button-color);
+        }
+
 
 
 /* Features Section */
 
         h2{
-            margin:0 auto;
-            margin-top:5rem;
+            margin-bottom:3rem;
+            
         }
 
         .features-section{
             display:flex;
-            flex-direction:row;
-            justify-content:space-between;
+            flex-direction:column;
+            justify-content:center;
             align-items:center;
-            margin: 0 auto;
+
+        }
+
+        .features-content{
+            display:flex;
+            flex-direction:row;
+            justify-content:center;
+            align-items:center;
+            margin:0 auto;
+            margin-bottom:5rem;
+            max-width:100%;
         }
 
         .features{
@@ -249,8 +282,7 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            margin:0 auto;
-            margin-right:2rem;
+            width:20%;
          
         }
 
@@ -258,10 +290,13 @@
             width:100%;
             height:100%;
             object-fit:cover;
+            margin-bottom:2rem;
+            padding:0.5rem;
         }
 
         .features figcaption{
             font-size: 14px;
+            padding:0.5rem;
         } 
 
 /* Testimonial Section */
@@ -270,24 +305,28 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            margin:0 auto;
-            margin-top:5rem;
             background-color: var(--quote-section-bg-color);
             min-height:30rem;
             max-width:100%;
             margin-bottom:4rem;
         }
+
+        .testimonial-content{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+        }
        
 
         .testimonial p{
             font-size: var(--quote-section-font-size);
-            font-style: var(--quote-section-font-style);
+            font-style: italic;
             color: var(--quote-section-text-color);
 
         }
 
         .testimonial-text{
-            margin:0 auto;
             margin-bottom: 2rem;
             width:60%;
         }
@@ -303,7 +342,7 @@
             display:flex;
             flex-direction:row;
             justify-content:flex-start;
-            align-items:flex-start;
+            align-items:center;
             margin:0 auto;
             background-color:var(--button-color);
             color: var(--hero-main-text-color);
@@ -319,45 +358,49 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            margin:0 auto;
-            margin-left:5rem;
+            width:60%;
+           
         }
 
         .cta-text h3{
             font-size: 18px;
             font-weight: var(--info-section-header-font-weight);
-            padding: 0.5rem;
-            margin-bottom:0;
+            padding: 1rem;
+            width:60%;
+            margin-bottom:-0.5rem;
         }
 
         .cta-text p{
             font-size: 16px;
             font-weight:300;
             color: var(--hero-secondary-text-color);
-            margin-right:3.5rem;
+            width:59%;
             margin-top:0;
-            padding:0.5rem;
+            margin-left:1rem;
 
         }
     
         .cta-btn{
             display:flex;
-            flex-direction:row;
+            flex-direction:column;
             justify-content:center;
             align-items:center;
-            margin:0 auto;
-            margin-top:3.5rem;
-            margin-left:0;
+            width:50%;
         }
         .cta-btn button{
             background-color: var(--button-color);
-            border-radius: 10px;
-            width: 8rem;
-            height: 3rem;
+            border-radius: 5px;
             font-weight: 700;
             border: 2px solid white;
             color: var(--hero-main-text-color);
+            width:35%;
+            height:auto;
 
+        }
+
+        .cta-btn button:hover {
+            background-color: var(--hero-main-text-color);
+            color: var(--button-color);
         }
 
         .footer{
