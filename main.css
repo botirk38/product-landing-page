@@ -250,6 +250,8 @@
 
         .hero-btn:hover{
             background-color: var(--hero-main-text-color);
+            border-color: var(--button-color);
+            border-style: solid;
             color: var(--button-color);
         }
 
