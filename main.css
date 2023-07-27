@@ -101,7 +101,7 @@
     
     header {
         background-color: var(--dark-bg-color);
-        color: #fff;
+        color: var(--header-link-text-color);
         padding: 10px 0;
     }
 
@@ -117,6 +117,17 @@
     .container-wide {
         width: 100%;
         max-width: 100dvw;
+    }
+
+    .button{
+        border-radius: 10px;
+        font-weight: 700;
+        color: var(--hero-main-text-color);
+        height:auto;
+        padding: 0.5rem 5rem;
+        font-weight: 700;
+
+
     }
 
     /* Header Section */
@@ -148,10 +159,11 @@
 
         }
         
-        .navbar-logo img {
-            width:25%;
-            height:25%;
-          
+        .navbar-logo-text{
+            font-size: var(--header-logo-font-size);
+            font-weight: var(--hero-main-text-font-weight);
+            color: var(--header-logo-text-color);
+
         }
         
         .navbar ul {
@@ -168,7 +180,7 @@
         }
         
         .navbar ul li a {
-            color: #fff;
+            color: var(--header-link-text-color);
             text-decoration: none;
             padding: 5px 10px;
         }
@@ -176,8 +188,10 @@
         .navbar ul li a:hover,nav a.nav-selected {
             background-color: var(--button-color);  
             border-radius: 5px;
+            cursor:pointer;
         }
 
+      
     /* Hero Section */
     
         .hero {
@@ -233,16 +247,9 @@
   
         .hero-btn {
             margin-top: 0.5rem;
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
             background-color: var(--button-color);
-            border-radius: 10px;
             color: var(--hero-main-text-color);
-            width: 8rem;
-            height: 2.5rem;
-            font-weight: 700;
+           
         }
 
         .hero-btn:hover{
@@ -272,9 +279,9 @@
             flex-direction:row;
             justify-content:center;
             align-items:center;
-            margin:0 auto;
             margin-bottom:5rem;
             max-width:100%;
+            gap:0.5rem;
         }
 
         .features{
@@ -282,21 +289,31 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            width:20%;
+            width:25%;
          
+        }
+
+        .features-img{
+            display:flex;
+            flex-direction:column;
+            justify-content:center;
+            align-items:center;
+            width:100%;
+            margin-bottom:0.5rem;
         }
 
         .features img{
             width:100%;
-            height:100%;
             object-fit:cover;
-            margin-bottom:2rem;
             padding:0.5rem;
+            border:2px solid var(--button-color);
+            border-radius:10px;
         }
 
+       
+
         .features figcaption{
-            font-size: 14px;
-            padding:0.5rem;
+            font-size: 14px;        
         } 
 
 /* Testimonial Section */
@@ -358,7 +375,7 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            width:60%;
+            width:100%;
            
         }
 
@@ -366,17 +383,16 @@
             font-size: 18px;
             font-weight: var(--info-section-header-font-weight);
             padding: 1rem;
-            width:60%;
-            margin-bottom:-0.5rem;
         }
 
         .cta-text p{
             font-size: 16px;
             font-weight:300;
             color: var(--hero-secondary-text-color);
-            width:59%;
-            margin-top:0;
-            margin-left:1rem;
+            width:70%;
+            padding-bottom:1rem;
+            padding-left:2rem;
+            
 
         }
     
@@ -385,16 +401,12 @@
             flex-direction:column;
             justify-content:center;
             align-items:center;
-            width:50%;
         }
         .cta-btn button{
             background-color: var(--button-color);
-            border-radius: 5px;
-            font-weight: 700;
-            border: 2px solid white;
-            color: var(--hero-main-text-color);
-            width:35%;
-            height:auto;
+            border:2px solid white;
+
+           
 
         }
 
