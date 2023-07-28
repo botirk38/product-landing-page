@@ -823,9 +823,8 @@ label, input, textarea {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items:flex-start; 
+    align-items:center; 
     height: 35rem;
-    margin-left:2rem;
     margin-bottom:5rem;
 }
 
