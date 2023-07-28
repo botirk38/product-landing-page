@@ -989,6 +989,11 @@ color: var(--about-hero-main-text-color);
     max-width: 15rem;
 }
 
+.partners-img a:hover{
+    transform: scale(1.1);
+    transition: all 300ms ease-in;
+}
+
 
 .footer{
     display:flex;
