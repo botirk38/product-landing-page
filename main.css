@@ -287,7 +287,7 @@
             justify-content:center;
             align-items:flex-start;
             margin-bottom:5rem;
-            max-width:100%;
+            max-width:80%;
             gap:0.5rem;
         }
 
@@ -321,7 +321,7 @@
 
         .features figcaption{
             font-size: 14px;
-            width:80%;      
+            max-width:80%;   
         } 
 
 /* Testimonial Section */
