@@ -373,6 +373,7 @@
             color: var(--hero-main-text-color);
             min-height:100%;
             border-radius:10px;
+            margin-bottom:2rem;
 
 
         }
