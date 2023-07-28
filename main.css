@@ -866,6 +866,9 @@ label, input, textarea {
     color: var(--button-color);
 }
 
+ .about-main{
+    min-width: 100rem;
+ }
 
 
 /* Values Section */
