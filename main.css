@@ -865,10 +865,10 @@ label, input, textarea {
     border-style: solid;
     color: var(--button-color);
 }
-
- .about-main{
-    min-width: 100rem;
- }
+.about-main{
+    min-width: 100%;
+}
+ 
 
 
 /* Values Section */
