@@ -820,8 +820,8 @@ label, input, textarea {
 
 .about-hero-content{
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start
+    flex-direction: column;
+    justify-content: center;
     align-items:flex-start; 
     height: 35rem;
     margin-left:2rem;
@@ -829,11 +829,7 @@ label, input, textarea {
 }
 
 .about-hero-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    width:80%;
+    width:60%;
 }
 
 .about-hero-text h1 {
