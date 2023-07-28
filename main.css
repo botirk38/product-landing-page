@@ -48,7 +48,7 @@
 
     /*Hero Section */
 
-        --hero-main-text-color:#F9FAF8;
+        --about-hero-main-text-color:#1F2937;
         --hero-secondary-text-color:#E5E7EB;
 
     /*Header Section */
@@ -86,7 +86,6 @@
     body {
         font-family: var(--font-family);
         min-height: 100vh;
-        width:100vw;
         line-height: 1.5;
         display: flex;
         flex-direction: column;
@@ -98,6 +97,7 @@
     main {
         min-height: 100vh;
         display: flex;
+        width:100%;
         flex-direction: column;
         justify-content:center;
         align-items: center;
@@ -200,25 +200,27 @@
       
     /* Hero Section */
     
-        .hero {
+        .about-hero {
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items:center;
-            background-color: var(--dark-bg-color);
+            background-image: url(./assets/images/main.jpg);
+            background-position: top center;
+            background-repeat: no-repeat;
             margin-bottom:2rem;
         }
 
-        .hero-content{
+        .about-hero-content{
             display: flex;
             flex-direction: row;
-            justify-content: center;
+            justify-content: left;
             align-items:center;
-            background-color: var(--dark-bg-color);
+            height: 35rem;
             margin-bottom:5rem;
         }
         
-        .hero-text {
+        .about-hero-text {
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -226,16 +228,16 @@
             width:50%;
         }
         
-        .hero-text h1 {
+        .about-hero-text h1 {
             font-size: var(--hero-main-text-font-size);
             font-weight: var(--hero-main-text-font-weight);
-            color: var(--hero-main-text-color);
+            color: var(--about-hero-main-text-color);
             margin-bottom:0.5rem;
         }
         
-        .hero-text p {
+        .about-hero-text p {
             font-size: var(--hero-secondary-text);
-            color: var(--hero-secondary-text-color);
+            color: var(--about-hero-secondary-text-color);
             margin-bottom:0.5rem;
         }
         
@@ -261,27 +263,22 @@
 
         .hero-btn:hover{
             background-color: var(--hero-main-text-color);
+            border-color: var(--button-color);
+            border-style: solid;
             color: var(--button-color);
         }
 
 
 
-/* Features Section */
+/* Values Section */
 
         .features-header{
             margin-bottom:3rem;
             
         }
 
-        .features-section{
-            display:flex;
-            flex-direction:column;
-            justify-content:center;
-            align-items:center;
 
-        }
-
-        .features-content{
+        .values-section{
             display:flex;
             flex-direction:row;
             justify-content:center;
@@ -324,19 +321,68 @@
             width:80%;      
         } 
 
+    .innovation-section{
+        display:flex;
+        flex-direction:row;
+        justify-content:left;
+        align-items:center;
+        max-width:100%;
+        min-height:30rem;
+        margin-bottom:2rem;
+        margin-left:36%;
+    }
+
+    .innovation-img {
+        
+        float: left;
+    
+    }
+    .innovation-img img{
+        width: 80%;
+        height: 80%;
+        float: left;
+        object-fit: cover;
+    }  
+    .innovation-text{
+        width:30rem;
+    }
+
+    /* Ad Section */
+
+    .ad-section {
+        width:43%;
+        justify-content:center;
+        align-items: center;
+        min-height: 2rem;
+        background-color: #a9dce2;
+        background-image: url(./assets/images/ad.jpg);
+        background-position: center center;
+        margin-bottom: 2rem;
+        background-repeat: no-repeat;
+        opacity: 0.9;
+    }
+    .ad-text h2{
+        margin: 0px 0px 2px;
+        padding-top: 25rem;
+        font-size: var(--hero-main-text-font-size);
+        text-align: center;
+        justify-content: ends;
+        color: var(--about-hero-main-text-color);
+    }
 /* Testimonial Section */
-        .testimonial{
+        .partners{
             display:flex;
             flex-direction:column;
             justify-content:center;
             align-items:center;
             background-color: var(--quote-section-bg-color);
-            min-height:30rem;
+            min-height:17rem;
             max-width:100%;
-            margin-bottom:4rem;
+            margin-bottom:2rem;
         }
 
-        .testimonial-content{
+        .partners-content{
+            padding-top: 2rem;
             display:flex;
             flex-direction:column;
             justify-content:center;
@@ -344,29 +390,10 @@
         }
        
 
-        .testimonial p{
-            font-size: var(--quote-section-font-size);
-            font-style: italic;
-            color: var(--quote-section-text-color);
-
-        }
-
-        .testimonial-text{
-            margin-bottom: 2rem;
-            width:60%;
-        }
-
-        .testimonial-author{  
-            margin-left:45rem;
-            margin-right:0;
-            font-weight: var(--hero-main-text-font-weight);
-        }
-/* CTA Section */
-
-        .cta{
+        .partners-img {
             display:flex;
             flex-direction:row;
-            justify-content:flex-start;
+            justify-content:space-around;
             align-items:center;
             margin:0 auto;
             background-color:var(--button-color);
@@ -425,9 +452,8 @@
             justify-content:center;
             align-items:center;
             margin:0 auto;
-            margin-top:5rem;
             background-color:var(--dark-bg-color);
-            color: var(--hero-main-text-color);
+            color: var(--header-link-text-color);
             max-width:100%;
             min-height:100%;
             padding: 2rem;
