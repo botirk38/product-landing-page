@@ -976,6 +976,10 @@ color: var(--about-hero-main-text-color);
     align-items:center;
 }
 
+.partners-header-text{
+    margin-bottom: 2rem;
+}
+
 
 .partners-img {
     display:flex;
